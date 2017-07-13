@@ -55,6 +55,9 @@ https://github.com/amfe/lib-flexible
 ```
 
 #### 如何使用
+```less
+.ft(16px);
+```
 
 ### sass中字体自动生成mixin写法
 #### 如何定义
@@ -71,6 +74,9 @@ https://github.com/amfe/lib-flexible
 ```
 
 #### 如何使用
-
+```scss
+@include font-dpr(12px);
+```
 
 ### 考拉如何使用(不需要安装任何插件最简单的使用less,sass的方法)
+- [官网](http://koala-app.com/index-zh.html) 
