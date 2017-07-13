@@ -1,0 +1,173 @@
+/*less语法：http://www.bootcss.com/p/lesscss/*/
+.ft(@fontSize){
+    font-size: @fontSize;
+    [data-dpr="2"] & {
+        font-size: @fontSize * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: @fontSize * 3;
+    }
+}
+/*头部区域 start*/
+/*切图技巧：把慢慢买项目设置到320宽度，安装px to rem插件,设置px-to-rem为32,按快捷键alt + z*/
+/*字体不要用rem*/
+/*切图优点：基本和pc端切图保持一致，不需要想一些很灵活的技巧*/
+.header {
+  height: 1.5625rem;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+.header .logo {
+  margin-left: 0.1563rem;
+  padding: 0.375rem;
+}
+.logo a {
+  display: block;
+  width: 5.7969rem;
+  height: 0.7813rem;
+}
+.logo img {
+  width: 5.7969rem;
+  height: 0.7813rem;
+  display: block;
+}
+.appdown {
+  padding: 0.2188rem;
+}
+.appdown a {
+  display: block;
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+.appdown img {
+  width: 1.0625rem;
+  height: 1.0625rem;
+  display: block;
+}
+/*头部区域 end*/
+/*搜索区域 start */
+.search {
+  padding: 0.3125rem;
+  border-bottom: 1px solid #e6e6e6;
+  background: white;
+  position: relative;
+}
+.search .searchtxt input {
+  width: 8.5rem;
+  height: 0.9375rem;
+  padding-left: 0.5rem;
+  border-radius: 0.4688rem;
+  background: #f1f1f1;
+  color: #000;
+  .ft(16px);
+  border: none;
+}
+.search input[type="submit"] {
+  width: 1.9688rem;
+  height: 0.9375rem;
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  border-radius: 0.4688rem;
+  .ft(16px);
+  background: #ff841d;
+  border: none;
+}
+/*搜索区域 end*/
+/*导航区域 start */
+.big-classify {
+  padding: 0.1875rem 0;
+  padding-top: 0.5rem;
+}
+.big-classify li {
+  float: left;
+  width: 2.5rem;
+  height: 2.125rem;
+  margin-bottom: 0.5rem;
+}
+.big-classify li a {
+  display: block;
+}
+.big-classify li {
+  text-align: center;
+}
+.big-classify li .pic img {
+  width: 1.5625rem;
+}
+.big-classify li .name {
+  margin-top: 0.0938rem;
+  .ft(12px);
+}
+/*导航区域 end */
+
+/*超值折扣推荐标题 start */
+.jxhd {
+  height: 1.0938rem;
+  background-color: #ff9000;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  border-bottom: solid 1px #ffc881;
+  padding-left: 0.3125rem;
+}
+.jxhd span {
+  float: left;
+  color: #fff;
+  line-height: 1.0938rem;
+}
+.jxhd img {
+  float: right;
+  margin-top: 0.25rem;
+  margin-right: 0.3125rem;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.jxhd span{
+  .ft(12px);
+}
+/*超值折扣推荐标题 end */
+
+/*超值折扣推荐主体内容 start*/
+.jxhdc li{
+    padding:0.4375rem 0.25rem;
+}
+.jxhdc .pic{
+    float:left;
+    width:3.4375rem;
+}
+.jxhdc .pic img{
+    width:3.125rem;
+    height:3.125rem;
+} 
+.jxhdc .info .title{
+    color:#333;
+    word-break:break-all;
+    .ft(15px);
+    line-height: 0.5938rem;
+    min-height: 1.7813rem;
+    text-align: left;
+    font-weight: normal;
+}
+.jxhdc .info .title span{
+    color:#ff6c00;
+}
+.jxhdc .info .other{
+    margin-top:8px;
+    color:#a1a1a1;
+    .ft(12px);
+}
+.jxhdc .info .other .mall{
+    float:left;
+}
+.jxhdc .info .other .comment{
+    float:right;
+}
+.jxhdc .info .other .comment i{
+    width: 0.4375rem;
+    height:0.4688rem;
+    display: inline-block;
+    background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17'><path fill='#a1a1a1' d='M924.504962 664.898711 97.819886 664.898711c-17.557888 0-31.795147-14.241352-31.795147-31.795147l0-508.732583c0-17.557888 14.238282-31.792077 31.795147-31.792077l241.198387 0 149.664671-149.661601c6.209422-6.212492 14.34266-9.31618 22.478967-9.31618s16.269545 3.102664 22.479991 9.31618L683.306574 92.57788l241.198387 0c17.557888 0 31.795147 14.235213 31.795147 31.792077L956.300109 633.10254C956.300109 650.657358 942.061826 664.898711 924.504962 664.898711zM892.708791 156.169197l-222.569098 0c-8.428973 0-16.518209-3.354398-22.478967-9.31618l-136.498814-136.494721-136.498814 136.494721c-5.961782 5.961782-14.051017 9.31618-22.479991 9.31618l-222.569098 0L129.61401 601.304324l763.093758 0L892.707768 156.169197zM288.592814 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM511.161912 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM733.73101 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    vertical-align: middle;
+    margin-right:0.125rem;
+}
+/*超值折扣推荐主体内容 end*/

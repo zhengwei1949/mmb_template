@@ -1,0 +1,13 @@
+.ft(@fontSize){
+    font-size: @fontSize;
+    [data-dpr="2"] & {
+        font-size: @fontSize * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: @fontSize * 3;
+    }
+}
+
+body{
+    .ft(23px);
+}

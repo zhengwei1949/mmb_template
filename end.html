@@ -1,0 +1,210 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>rem test end</title>
+  <script>
+!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+</script>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header clearfix">
+    <div class="logo fl">
+      <a href="#">
+        <img src="http://m.manmanbuy.com/images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="appdown fr">
+      <a href="#">
+        <img src="http://m.manmanbuy.com/images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="search clearfix">
+    <div class="searchtxt fl">
+      <input type="text">
+    </div>
+    <input type="submit" value="搜索">
+  </div>
+  <ul class="big-classify clearfix">
+    <li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li><li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li><li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li><li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li><li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li><li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li><li>
+      <a href="#">
+        <div class="pic">
+            <img src="http://m.manmanbuy.com/images/ic_search.png" alt="比价搜索">
+        </div>
+        <div class="name">
+            比价搜索
+        </div>
+      </a>
+    </li>
+  </ul>
+  <div class="jxhd clearfix">
+     <span>超值折扣推荐</span>
+     <img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20">
+  </div>
+  <ul class="jxhdc">
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+    <li class="clearfix">
+      <a href="d.aspx?id=190949&amp;f=weixinlist">
+        <div class="pic">
+          <img src="http://apic.zuyushop.com/cuxiaoPic/20177/2017070012315997385.png">
+        </div>
+        <div class="clearfix info">
+          <div class="title">慢慢买：有我~网购价格不怕7！7周年福利来袭 <span>多重好礼，红包礼包各种包等你来取</span></div>
+          <div class="other clearfix"><span class="mall">慢慢买 | 07-13 18:20</span><span class="comment"><i class="icon-comment"></i>58</span>
+          </div>
+        </div>
+      </a>
+      </li>
+  </ul>
+
+</body>
+</html>

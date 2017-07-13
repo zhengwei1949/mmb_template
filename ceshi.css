@@ -1,0 +1,9 @@
+body {
+  font-size: 23px;
+}
+[data-dpr="2"] body {
+  font-size: 46px;
+}
+[data-dpr="3"] body {
+  font-size: 69px;
+}
