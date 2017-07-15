@@ -81,6 +81,7 @@
 .big-classify {
   padding: 0.1875rem 0;
   padding-top: 0.5rem;
+  background:#fff;
 }
 .big-classify li {
   float: left;
