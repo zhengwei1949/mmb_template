@@ -31,20 +31,24 @@ font-size、padding,margin,height直接量像素（当然像当当网是把所�
 
 
 ### rem布局
-#### 上课时的写法
-见demo.html --> 之前上课时候大概的玩法(方便量尺寸)
+
+#### 理论说明
+- https://github.com/amfe/article/issues/17
 
 #### 推荐网站
-- https://m.douyu.com/
-斗鱼的布局思路：
-1. 用640px的设计稿切的图 
-2. 总宽度写死 -> 10rem
-3. 所有的尺寸全部用rem(包括字体大小,padding,margin,width,line-height)
-4. dpr是2的情况下，font-size是24px,dpr是3的情况下，font-size是36px
+- https://m.taobao.com/
 
 
 #### 更专业的玩法
 https://github.com/amfe/lib-flexible
+
+注意事项：
+```html
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+```
+如果加上这句，最终渲染出来整体宽度是320px,dpr为1，如果没有加，则渲染出来整体宽度是640,dpr为2，其实本质上是没有区别的
+
+
 
 理论上每张图在各个手机上是比例一致的，我们很容易可以得出如下的结论：
 由于：640下某元素容器的宽度 /  = 750下某元素容器的宽度 / 750
