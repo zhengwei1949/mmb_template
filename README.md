@@ -42,6 +42,9 @@ font-size、padding,margin,height直接量像素（当然像当当网是把所�
 #### 更专业的玩法
 https://github.com/amfe/lib-flexible
 
+#### 市面上一堆关于rem的思路，为什么一定要这样玩?
+此方案久经考验，具有普遍适用性
+
 注意事项：
 ```html
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
