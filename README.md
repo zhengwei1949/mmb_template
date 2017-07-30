@@ -145,5 +145,6 @@ https://github.com/amfe/lib-flexible
 ## 关于移动端的资料
 - vConsole
 - http://94dreamer.com/index.php/Home/Article/index/id/42
+- https://github.com/peunzhang/pageResponse(另一款不错的切图的库)
 
 
